@@ -1,13 +1,12 @@
 package com.peterkimeli.adalabs.adapters;
 
-import android.app.LauncherActivity;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,6 +57,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 Toast.makeText(context,"You clicked " + listItem.getHead(),Toast.LENGTH_LONG).show();
             }
         });
+        Log.e("This is ",listItem.getHead());
+        Log.e("This is ",listItem.getDesc());
+        Log.e("This is ",listItem.getImageUrl());
 
 
     }
