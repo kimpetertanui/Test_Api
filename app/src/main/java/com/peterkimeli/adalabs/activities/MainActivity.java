@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         listItems=new ArrayList<>();
         loadRecyclerViewData();
+
+        /*For testing puposes use dummy data below*/
 //        for (int i=0; i<10;i++){
 //            ListItem listItem =new ListItem(
 //                    "Heading " + (i+1),
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
                         try {
                             JSONObject jsonObject=new JSONObject(s);
-                            JSONArray array=jsonObject.getJSONArray("heroes");
+                            JSONArray array=jsonObject.getJSONArray("heroes");// the name of the json array object is heroes
 
                             for (int i=0; i<array.length();i++){
                                 JSONObject jsonObject1=array.getJSONObject(i);
